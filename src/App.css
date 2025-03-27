@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  background-color: hsl(212, 45%, 89%);
+}
+
+main {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-.read-the-docs {
-  color: #888;
+#qr-code {
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+#qr-code-description {
+  color: hsl(216, 15%, 48%);
+}
+
+#qr-code-section {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(216, 15%, 48%);
+  margin: auto;
+  padding: 16px 16px 40px 16px;
+  width: 300px;
+}
+
+#qr-code-section-text {
+  margin: auto;
+  padding: 0px 16px 0px 16px;
 }
